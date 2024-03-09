@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MenuActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/welcome_to_my_portfile"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/purple_200"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:layout_marginBottom="20dp"
+
+        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_marginBottom="20dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_marginBottom="20dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/black"
+
+            />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
