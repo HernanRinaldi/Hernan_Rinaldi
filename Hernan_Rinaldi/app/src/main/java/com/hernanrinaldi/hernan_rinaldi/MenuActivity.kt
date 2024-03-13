@@ -10,10 +10,31 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val ButtonAbout = findViewById<Button>(R.id.About)
-        val ButtonSkills = findViewById<Button>(R.id.Skills)
-        val ButtonProjects = findViewById<Button>(R.id.Projects)
-        val ButtonContact = findViewById<Button>(R.id.Contact)
+        val buttonAbout = findViewById<Button>(R.id.About)
+        val buttonSkills = findViewById<Button>(R.id.Skills)
+        val buttonProjects = findViewById<Button>(R.id.Projects)
+        val buttonContact = findViewById<Button>(R.id.Contact)
 
+        buttonAbout.setOnClickListener { navigateToAbout() }
+        buttonSkills.setOnClickListener { navigateToSkills() }
+        buttonProjects.setOnClickListener { navigateToProjects() }
+        buttonContact.setOnClickListener { navigateToContact() }
     }
+     private fun navigateToAbout (){
+        val intentAbout = Intent(this, AboutActivity::class.java)
+        startActivity(intentAbout)
+    }
+     private fun navigateToSkills (){
+         val intentSkills = Intent(this, SkillsActivity::class.java)
+     startActivity(intentSkills)
+     }
+    private fun navigateToProjects (){
+        val intentProjects = Intent(this, ProjectsActivity::class.java)
+        startActivity(intentProjects)
+    }
+    private fun navigateToContact (){
+        val intentContact = Intent(this, ContactActivity::class.java)
+        startActivity(intentContact)
+    }
+
 }
