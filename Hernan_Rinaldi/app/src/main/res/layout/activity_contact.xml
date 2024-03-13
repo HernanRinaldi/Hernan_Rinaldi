@@ -7,16 +7,24 @@
     android:orientation="vertical"
     tools:context=".SkillsActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/BtnBackMenu"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:textColor="@color/white"
-        android:textSize="30dp"
+        android:background="@color/purple_200"
         >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BtnBackMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="30dp"
 
-    </androidx.appcompat.widget.AppCompatButton>
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
