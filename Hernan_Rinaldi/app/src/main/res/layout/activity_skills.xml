@@ -8,6 +8,7 @@
     tools:context=".SkillsActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerHeadButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"
@@ -25,15 +26,89 @@
         </androidx.appcompat.widget.AppCompatButton>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skills"
-        android:textSize="30dp"
-        android:textColor="@color/white"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerMainSkills"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         >
 
-    </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSkillsFront"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/purple_700"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <TextView
+                android:id="@+id/titleCardFront"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frontend"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:textSize="35dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp">
+
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ReactJs"
+                    android:textSize="30dp"
+                    android:paddingTop="15dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSkillsBack"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/purple_700"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="30dp"
+            >
+            <TextView
+                android:id="@+id/titleCardBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backend"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
