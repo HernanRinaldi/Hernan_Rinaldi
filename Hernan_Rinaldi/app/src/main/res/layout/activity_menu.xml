@@ -23,54 +23,94 @@
             android:layout_marginStart="2dp"
             >
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/About"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_700"
-                android:text="@string/about"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
                 android:layout_weight="1"
+                app:cardCornerRadius="10dp"
                 android:layout_marginEnd="1dp"
+            >
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/About"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/purple_700"
+                 android:text="@string/about"
+                 android:textAllCaps="true"
+                 android:textColor="@color/white"
+                 android:layout_weight="1"
 
-                />
+                 >
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Skills"
+             </androidx.appcompat.widget.AppCompatButton>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_700"
-                android:text="@string/skills"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
                 android:layout_weight="1"
+                app:cardCornerRadius="10dp"
                 android:layout_marginEnd="1dp"
-                />
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_700"
+                    android:text="@string/skills"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"
+                    >
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Projects"
+                </androidx.appcompat.widget.AppCompatButton>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_700"
-                android:text="@string/projects"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
                 android:layout_weight="1"
+                app:cardCornerRadius="10dp"
                 android:layout_marginEnd="1dp"
-                />
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Projects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_700"
+                    android:text="@string/projects"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"
+                    >
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Contact"
+                </androidx.appcompat.widget.AppCompatButton>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_700"
-                android:text="@string/contact"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
                 android:layout_weight="1"
-                android:layout_marginEnd="2dp"
-                />
+                app:cardCornerRadius="10dp"
+                android:layout_marginEnd="1dp"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_700"
+                    android:text="@string/contact"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatButton>
+            </androidx.cardview.widget.CardView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
