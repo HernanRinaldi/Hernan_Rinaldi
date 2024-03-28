@@ -5,117 +5,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AAB5F1"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
+    android:background="@color/white"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frameMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_navigation"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AEBEC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="2dp"
-            android:backgroundTint="#AAB5F1"
-            android:layout_marginStart="2dp"
-            >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_marginEnd="1dp"
-            >
-             <androidx.appcompat.widget.AppCompatButton
-                 android:id="@+id/About"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:background="@color/purple_700"
-                 android:text="@string/about"
-                 android:textAllCaps="true"
-                 android:textColor="@color/white"
-                 android:layout_weight="1"
-
-                 >
-
-             </androidx.appcompat.widget.AppCompatButton>
-            </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_marginEnd="1dp"
-                >
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/Skills"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/purple_700"
-                    android:text="@string/skills"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="1dp"
-                    >
-
-                </androidx.appcompat.widget.AppCompatButton>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_marginEnd="1dp"
-                >
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/Projects"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/purple_700"
-                    android:text="@string/projects"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="1dp"
-                    >
-
-                </androidx.appcompat.widget.AppCompatButton>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_marginEnd="1dp"
-                >
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/Contact"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/purple_700"
-                    android:text="@string/contact"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="1dp"
-                    >
-
-                </androidx.appcompat.widget.AppCompatButton>
-            </androidx.cardview.widget.CardView>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

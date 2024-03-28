@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,31 +11,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"
-        >
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        tools:ignore="MissingConstraints">
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BtnBackMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Back"
+            android:text="@string/back"
             android:textColor="@color/white"
-            android:textSize="30dp"
+            android:textSize="30sp"
 
             >
 
         </androidx.appcompat.widget.AppCompatButton>
 
+        <TextView
+            android:id="@+id/head_title_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/About"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="170sp"
+            android:textColor="@color/white">
+
+        </TextView>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/IdTextAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="About"
-        android:textSize="30dp"
-        android:textColor="@color/white"
 
-        >
 
-    </androidx.appcompat.widget.AppCompatEditText>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
